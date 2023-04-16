@@ -2,7 +2,12 @@
 * {
     --primary: rgb(189, 215, 238);
     --secondary: blue;
+    --third: rgb(255, 255, 255);
+    --dark:black;
     font-family: 'Roboto', sans-serif;
+}
+body{
+    background: var(--third);
 }
 /* header */
 header{
@@ -87,7 +92,7 @@ li a:hover{
         width: 100%;
         height: 40px;
         background-color: var(--secondary);
-        color: white;
+        color: var(--third);
         
     }
     p{
@@ -99,3 +104,30 @@ li a:hover{
     span:hover{
         background-color: rgb(118, 103, 103);
     }
+    /*DARK MODE*/
+    
+/* Styles for the body element in dark mode */
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  /* Styles for the header element in dark mode */
+  header.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Styles for the toggle switch in dark mode */
+  .toggle{
+    margin-right: -9rem;
+  }
+  .toggle-container.dark-mode .toggle-label {
+    color: #fff;
+  }
+  .dark-mood{
+    --primary: rgb(44, 81, 114);
+    --secondary: rgb(30, 30, 134);
+    --third: rgb(36, 32, 32);
+    --dark:rgb(255, 255, 255);
+}
