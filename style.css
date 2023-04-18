@@ -3,50 +3,45 @@
     --primary: rgb(189, 215, 238);
     --secondary: blue;
     --third: rgb(255, 255, 255);
-    --dark:black;
+    --dark: black;
     font-family: 'Roboto', sans-serif;
-}
-body{
+  }
+  body {
     background: var(--third);
-}
-/* header */
-header{
+  }
+  
+  header {
     background-color: var(--primary);
-
-    
     margin: -11px;
     display: flex;
     align-items: center;
     height: 50px;
-}
-
-.logo{
+  }
+  
+  .logo {
     margin: 20px;
     padding-left: 20px;
-    
-}
-ul {
+  }
+  ul {
     padding-left: 50px;
-    
-}
-li {
+  }
+  
+  li {
     display: inline;
     padding-left: 14px;
-}
-a {
+  }
+  a {
     text-decoration: none;
     color: var(--secondary);
     font-size: 25px;
-}
-li a:hover{
+  }
+  
+  li a:hover {
     background-color: rgb(118, 103, 103);
-
-} 
-/* main */
-
-.login-box {
-    
-    position:fixed;
+  }
+  
+  .login-box {
+    position: fixed;
     top: 50%;
     left: 50%;
     width: 350px;
@@ -54,80 +49,74 @@ li a:hover{
     padding: 30px;
     transform: translate(-50%, -50%);
     background: var(--primary);
-    box-shadow: 0px 0px 25px rgba(0,0,0,.9);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, .9);
     border-radius: 8px;
-    }
-    input {
-        
-        height: 40px;
-        margin: 10px 1px;
-        width: 350px;
-        border: 3px solid var(--secondary);
-        border-radius: 8px;
-        
-    }
-    label {
-        margin: 2px;
-        color: var(--secondary);
-    }
-    .agre{
-        width: 20px;
-        height: 16px;
-    }
-    
-    button {
-        
-        width: 80px;
-        height: 30px;
-        margin: 40px 140px;
-        border-radius: 5px;
-        border: solid 2px gray;
-        color: var(--secondary);
-    }
-    
-    footer {
-        position: fixed;
-        margin-left: -8px;
-        bottom: 0;
-        width: 100%;
-        height: 40px;
-        background-color: var(--secondary);
-        color: var(--third);
-        
-    }
-    p{
-        margin: 8px ;
-    }
-    span{
-        margin-left: 20px;
-    }
-    span:hover{
-        background-color: rgb(118, 103, 103);
-    }
-    /*DARK MODE*/
-    
-/* Styles for the body element in dark mode */
-body.dark-mode {
-    background-color: #222;
-    color: #fff;
   }
   
-  /* Styles for the header element in dark mode */
-  header.dark-mode {
-    background-color: #333;
-    color: #fff;
+  input {
+    height: 40px;
+    margin: 10px 1px;
+    width: 350px;
+    border: 3px solid var(--secondary);
+    border-radius: 8px;
   }
   
-  /* Styles for the toggle switch in dark mode */
-  .toggle{
-    margin-right: -9rem;
+  label {
+    margin: 2px;
+    color: var(--secondary);
   }
-  .toggle-container.dark-mode .toggle-label {
-    color: #fff;
+  
+  .agre {
+    width: 20px;
+    height: 16px;
   }
-  .dark-mood{
-    --primary: rgb(44, 81, 114);
-    --secondary: rgb(30, 30, 134);
-    --third: rgb(36, 32, 32);
-    --dark:rgb(255, 255, 255);
-}
+  
+  button {
+    width: 80px;
+    height: 30px;
+    margin: 40px 140px;
+    border-radius: 5px;
+    border: solid 2px gray;
+    color: var(--secondary);
+  }
+  
+  footer {
+    position: fixed;
+    margin-left: -8px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: var(--secondary);
+    color: var(--third);
+  }
+  
+  p {
+    margin: 8px;
+  }
+  
+  span {
+    margin-left: 20px;
+  }
+  
+  span:hover {
+    background-color: rgb(118, 103, 103);
+  }
+  
+  
+  .dark-mode {
+    --primary: rgb(50, 50, 50);
+    --secondary: #ddd;
+    --third: #eee;
+    --dark: white;
+  }
+  
+  body.dark-mode {
+    background-color: var(--primary);
+    color: var(--third);
+  }
+  
+
+  
+  a.dark-mode {
+    color: var(--secondary);
+  }
