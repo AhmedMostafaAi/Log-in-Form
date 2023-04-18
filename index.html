@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="dark-mode.css" media="(prefers-color-scheme: dark)">
-    <title>Login Form</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dark-mode.css" media="(prefers-color-scheme: dark)">
+  <title>Login Form</title>
 </head>
 <body>
   <header>
@@ -19,30 +19,29 @@
       <li><a href="#">Gallery</a></li>
       <li><a href="#">Reviews</a></li>
     </ul>
+    <div class="toggle-container">
+      <input type="checkbox" id="dark-mode-toggle" class="toggle">
+      <label for="dark-mode-toggle" class="toggle-label">Dark Mode</label>
+    </div>
   </header>
   <main>
-      <div class="login-box">
-        
-        <form>
-          <div class="user-box">
-              <input type="text"  placeholder="first name"  name="Fname" required="">
-          </div>
-          <div class="user-box">
-              <input type="text" placeholder="second name" name="Sname" required="">
-            </div>
-            
-            <input class="agre" type="checkbox"> I agree <a href="#"> <span> terms and conditions</span></a>
-              <button  type="submit" >Submit</button>
-        </form>
-      </div>
+    <div class="login-box">
+      <form>
+        <div class="user-box">
+          <input type="text" placeholder="First Name" name="Fname" required="">
+        </div>
+        <div class="user-box">
+          <input type="text" placeholder="Second Name" name="Sname" required="">
+        </div>
+        <input class="agre" type="checkbox"> I agree <a href="#"> <span>terms and conditions</span></a>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </main>
   <footer>
-    <p> All Cobyright reserved &COPY;  </p>
+    <p>All Copyright reserved &COPY;</p>
   </footer>
-  <div class="toggle-container">
-    <input type="checkbox" id="dark-mode-toggle" class="toggle">
-    <label for="dark-mode-toggle" class="toggle-label">Dark Mode</label>
-  </div>
+  
   <script src="main.js"></script>
 </body>
 </html>
